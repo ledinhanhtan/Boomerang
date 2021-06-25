@@ -1,0 +1,73 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    border:0;
+    background:transparent
+}
+
+.flex { display: flex; }
+.flex-row { flex-direction: row;}
+.flex-column { flex-direction: column; }
+
+.align-start { align-items: flex-start }
+.align-end { align-items: flex-end }
+.align-center { align-items: center }
+.align-baseline { align-items: baseline }
+.align-stretch { align-items: stretch }
+
+.self-start { align-self: flex-start }
+.self-end { align-self: flex-end }
+.self-center { align-self: center }
+.self-baseline { align-self: baseline }
+.self-stretch { align-self: stretch }
+
+.justify-start { justify-content: flex-start }
+.justify-end { justify-content: flex-end }
+.justify-center { justify-content: center }
+.justify-between { justify-content: space-between }
+.justify-around { justify-content: space-around }
+
+.img {
+    max-width: 100%;
+    display: block;
+}
+
+ul, ol { padding: 0; }
+li { list-style: none; }
+
+.btn {
+    color: #FFF !important;
+    background-color: var(--sub-neutral);
+    padding: 0.75em 2em;
+    border-radius: 8px;
+    transition: background-color 150ms ease-in-out;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: var(--main-neutral);
+}
+
+.btn-primary {
+    color: #FFF !important;
+    background-color: var(--accent-color);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: var(--accent-color-hover);
+}
+
+.container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1280px;
+    }
+}
